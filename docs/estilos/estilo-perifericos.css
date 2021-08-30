@@ -1,0 +1,33 @@
+main article > p {
+    padding:  10px 40px;
+    max-width: 500px;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+main article div#imagem{
+    max-width: 800px;
+    background-color: aqua;
+}
+
+main article img{
+    width: 100%;
+    margin: 10px 0px;
+}
+
+main article div#fim {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+main article div#fim p {
+    color: rgb(161, 161, 161);
+    text-align: justify;
+    padding: 10px 0px;
+    font-size: 1.5em;
+    margin: 10px 0px;
+}

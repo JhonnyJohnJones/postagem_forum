@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/social-blogger-16.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estilo-principal.css">
+    <link rel="stylesheet" href="estilos/estilo-forums.css">
+    <script src="main.js"></script>
+    <title>IDH e crescimento do PIB como indicadores de desenvolvimento - Professora Carls</title>
+</head>
+<body onload="criarBotoes(), funcBotoes()">
+    <header>
+        <div id="titulo">
+            <div id="nome">
+                <img src="imagens/social-blogger-64.png" alt="logo">
+                <h1>Brabos Forum</h1>
+            </div>
+            <p>O forum mais brabo que você nunca vai ver</p>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html" target="_self" rel="prev">Home</a>
+        <a href="faustao.html" target="_self" rel="next">Faustão</a>
+        <a href="minecraft.html" target="_self" rel="next">Minecraft</a>
+        <a href="sobre.html" target="_self" rel="next">Sobre</a>
+        <a href="fale-conosco.html" target="_self" rel="next">Fale Conosco</a>
+    </nav>
+    <script>
+        function abrirGrande(n) {
+            let div = document.createElement('div')
+            div.id = 'grandao'
+            div.innerHTML = '<button onclick="tirarGrande()">&#x274C;</button>'
+
+            let article = document.createElement('article')
+
+            let indice = document.createElement('div')
+            indice.id = 'indice'
+
+            indice.innerHTML = `<ol type="a"> 
+                    <li id="a">Apontar em qual ranking o Brasil subiria se privilegiasse os aspectos qualidade de vida e igualdade no desenvolvimento social.</li>
+                    <li id="b">Apresentar as consequências de priorizar o consumo para o desenvolvimento social.</li>  
+                    <li id="c">Argumentar em favor do seu ponto de vista.</li>
+                    <li id="d">Características de postagem</li>
+                </ol>`
+
+            let texto = document.querySelectorAll('section > section > article')[n].innerHTML
+            
+            article.innerHTML += texto
+
+            div.appendChild(indice)
+            div.appendChild(article)
+
+            document.body.appendChild(div)
+        }
+        function tirarGrande() {
+            let grandao = document.getElementById('grandao')
+            grandao.remove()
+        }
+    </script>
+    <main>
+        <article>
+            <h1>IDH e crescimento do PIB como indicadores de desenvolvimento - Professora Carls</h1>
+            <div id="graficos">
+                <div id="pib">
+                    <img src="imagens/post-prof/ranking-PIB.png" alt="Ranking PIB">
+                    <p>1. PIB significa Produto Interno Bruto, medida que representa asoma, em valores monetários, de todos os bens e serviçosfinais produzidos numa determinada região, durante um determinado período. </p>
+                </div>
+                <div id="idh">
+                    <img src="imagens/post-prof/ranking-IDH.png" alt="Ranking IDH">
+                    <p>2. IDH significa Índice de Desenvolvimento Humano, medida concebida pela ONU (Organização das Nações Unidas) para avaliar a qualidade de vida e o desenvolvimento econômico de uma população.</p>
+                </div>
+            </div>
+            <p>3. Um breve conjunto de informações para nos fazer repensar as relações de consumo:</p>
+            <ul>
+                <li>A indústria da moda é a segunda maior consumidora de água no mundo. Só perde para a do petróleo.</li>
+                <li>Estima-se que 17% a 20% da poluição da água industrial vem de tingimento e tratamento têxtil.</li>
+                <li>Cerca de 15% a 20% de tecido é desperdiçado a cada peça cortada. E tecido não é reciclável.</li>
+                <li>Estima-se que 10% das emissões de gases de efeito estufa provêm da indústria da moda</li>
+                <li>As fábricas de moda consomem mais de 130 milhões de toneladas de carvão/ano para gerar energia.</li>
+                <li>Para suprir a demanda do consumo, quase toda matéria-prima utilizada na moda resulta em problema: do algodão, cheio de pesticidas, ao poliéster, oriundo da exploração do petróleo.</li>
+                <li>Operários da indústria têxtil em países como China, Índia e Bangladesh trabalham mais de 12 horas por dia e ganham menos do que 100 dólares por mês.</li>
+                <li>Cerca de 80% da mão de obra deste mercado são mulheres. E menos de 2% ganham o suficiente para viver em condições dignas. Para ganhar mais, elas chegam a trabalhar mais de 75 horas por semana.</li>
+            </ul>
+            <p>E tem quem ache que o consumismo é um problema individual que só diz respeito à própria conta bancária…</p>
+            <em>(Adaptado de Nina Guimarães, O consumismo destrói o meio ambiente e incentiva o trabalho escravo. Metrópoles, 19/04/2017.)</em>
+            <p>4. As principais redes de varejo de moda do país associadas à ABVTEX (Associação Brasileira do Varejo Têxtil) já notam a melhora no ânimo dos consumidores. “O cenário é mais favorável, a partir do momento em que há maior disponibilidade de crédito; a inflação está abaixo do esperado, com aumento no poder de compra; e há uma leve redução do desemprego. Esses fatores somados ajudam a elevar a intenção de compra”, aponta Lima, diretor executivo da ABVTEX. A FGV estima que, em 2018, o PIB cresça 2,5%. Esse crescimento deve permanecer liderado pelo consumo. </p>
+            <em>(Adaptado de Em 2018, crescimento permanecerá liderado pelo consumo, diz FGV. Disponível em <a href="http://www.abvtex.org.br/" target="_blank" rel="external">http://www.abvtex.org.br/</a>. Acessado em 04/05/ 2018.)</em>
+            <p>5. Pelo 12º ano consecutivo, só deu ela: a Noruega foi novamente eleita pela ONU como o melhor país do mundo para se viver. Segundo Jens Wandel, diretor do departamento administrativo do Programa de Desenvolvimento da ONU, o sucesso do país consiste em combinar o crescimento de renda com um elevado nível de igualdade. “Ao longo do tempo, a Noruega conseguiu aumentar sua renda e, ao mesmo tempo, garantir que os rendimentos sejam distribuídos de modo uniforme”. </p>
+            <em>(Adaptado de Índice de Desenvolvimento Humano: o que faz da Noruega o melhor lugar para se viver? Huffpost Brasil, 17/12/2015.)</em>
+        </article>
+        <section>
+            <h2>Respostas</h2>
+            <section>
+                <div class="post">
+                    <img src="imagens/post-prof/sem-foto.png" alt="sem foto">
+                </div>
+                <article onclick="abrirGrande(0)">
+                    <p><span>Às 13:45 de hoje, Amante da Geografia postou:</span></p>
+                    <p><span>Boa tarde pessoal! Busquei seguir o roteiro indicado pela professora e quero expor minhas reflexões:</span></p>
+                    <p>O Brasil se encontra em 47º lugar no ranking do PIB e em 79º no do IDH. <span class="b">Notem, porém, que a Índia e a China, as quais apresentam os 1º e 2º lugares, respectivamente, no ranking do PIB, apresentam posições muito mais abaixo no IDH, se comparadas com o Brasil.</span>Sob meu ponto de vista, esses dados representam o constante conflito entre tipos de investimentos que os países realizam: enquanto os grandes asiáticos tem implantado políticas que estimulem fortemente o consumo nos últimos anos, o Brasil, ate recentemente, tem direcionado seus esforços em medidas sociais.</p>
+                    <p><span>Vocês, assim como eu, devem ter ficado entusiasmados com o texto 5.</span> <span class="c">Para mim, este é o caminho que o Brasil deve seguir,</span> <span class="a">uma vez que investimentos privilegiados em qualidade de vida e igualdade no desenvolvimento social aumentarão expressivamente a posição no ranking do IDH.</span> <span class="c">Tal índice avalia elementos como educação, expectativa de vida e outros itens afins. Como visto, a Noruega vem investindo nesse campo e, ao longo do tempo, conseguiu não apenas o 1º lugar do IDH, como também aumentou sua renda. Assim, conclui-se que aplicações em políticas que estimulam a distribuição uniforme de rendimentos aumenta a potência de uma democracia por fornecer não só uma melhor qualidade de vida aos seus contribuintes, como também a potência de ampliar o PIB.</span></p>
+                    <p><span>Sei que nosso país tem passado por uma recessão econômica angustiante, mas comparem os textos 3 e 4.</span> A ABVTEX informa que houve melhoras nos ânimos consumidores; o que gerará uma maior movimentação da economia, posto que os investimentos nacionais, agora, estão direcionados basicamente ao consumo. <span class="c">Mas queremos um cenário de ampliação das desigualdades no Brasil? Certamente é necessário o investimento nesse campo para que a riqueza nacional aumente, porém, esse não deve ser um ciclo fechado em si mesmo,</span> <span class="b">posto que o investimento apenas 15 no consumo gera a retração do desenvolvimento social, pois, assim como descreve o texto 3, ele gera incentivos a trabalhos escravos nos quais os funcionários realizam suas atividades com extensas jornadas de trabalho, além dos ínfimos salários, como vistos na China e na Índia.</span> <span class="c">Ou seja, essa busca a todo custo por um maior PIB gera um menor IDH, devendo, portanto, o Brasil manter seus esforços em medidas sociais para que siga o traçado caminhado pela Noruega.</span></p>
+                </article>
+            </section>
+            <section>
+                <div class="post">
+                    <img src="imagens/post-prof/sem-foto.png" alt="sem foto">
+                </div>
+                <article onclick="abrirGrande(1)">
+                    <p><span class="a">Conforme pedido, após a análise dos gráficos e leitura dos textos e depois de ler os significados de PIB e IDH, é possível saber que caso o Brasil opte por privilegiar aspectos como qualidade de vida e igualdade no desenvolvimento social, sua posição no ranking de IDH certamente subiria.</span></p>
+                    <p><span class="b">Ao priorizar o consumo vemos que muitos países acabam negligênciando o desenvolvimento social geral da população. Isso pode ser confirmado com um exemplo da Índia, que possui atualmente o maior crescimento do PIB contudo isso é efetuado através de casos onde trabalhadores da industria têxtil possuem uma carga horária de 12 horas e ganham menos do que 100 dólares por mês e menos de 2% das mulheres, que representam 80% da mão de obra, não ganham o suficiente para sobreviver.</span></p>
+                    <p>Deve-se salientar que a industria da moda é uma grande responsável pelo crescimento do PIB logo o aumento do consumo desses produtos afeta diretamente o crescimento do PIB.</p>
+                    <p><span class="c">Através do texto 5, é possivel prever que quando um país preza pelo crescimento da renda de forma igual a todos, distribuindo os rendimentos de forma uniforme o aumento do IDH se torna a consequência.</span></p>
+                    <p><span class="c">Com esses dois exemplos fica claro que a prioridade deve ser o desenvolvimento social para que toda a população</span> <span>seje</span> <span class="c">beneficiada.</span> <span>Postagem do aluno 5 do 3º ano A.</span></p>
+                </article>
+            </section>
+            <section>
+                <div class="post">
+                    <img src="imagens/post-prof/sem-foto.png" alt="sem foto">
+                </div>
+                <article onclick="abrirGrande(2)">
+                    <p>Bem, primeiramente, na forma natural da natureza o Brasil é o melhor pais para se viver, é um pais agricola e tudo o que planta nasce, <span class="a">só não e o melhor pais ainda por falta de investimento na educação e para o povo,</span> algo que torna ele um pais perigoso, violento, onde a<span> taixa de natalidade é maior que a de mortalidade.</span></p>
+                    <p>No Brasil a falta de conecimento sobre os assuntos é um problema, pois não existe um senso comum para o progressão do pais como na Noruega. </p>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer>Só não falimos ainda porque não existimos</footer>
+</body>
+</html>

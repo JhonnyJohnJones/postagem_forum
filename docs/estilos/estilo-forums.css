@@ -1,0 +1,224 @@
+:root {
+    --a: blueviolet;
+    --b: chocolate;
+    --c: forestgreen;
+    --d: blue;
+}
+
+main > article div#graficos {
+    display: flex;
+    width: inherit;
+    margin: 30px 0px 30px 0px;
+}
+
+main > article div#pib, main article div#idh {
+    margin: 30px;
+}
+
+main > article div#pib {
+    margin-left: 0px;
+}
+
+main > article div#idh {
+    margin-right: 0px;
+}
+
+main > article div img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+main > article > p {
+    margin:  10px 0px;
+}
+
+main > article ul {
+    list-style-position: inside;
+}
+
+main > article ul li {
+    margin: 5px 0px;
+}
+
+main > article em {
+    margin: 10px 0px 30px 0px;
+}
+
+main > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1000px;
+    min-width: 300px;
+    min-height: 500px;
+    background-color: white;
+    padding: 20px 30px;
+}
+
+main > section > h2 {
+    align-self: stretch;
+    margin: 20px 0px 30px 0px;
+    font-size: 2em;
+    text-align: center;
+}
+
+main > section > section {
+    padding: 10px;
+    background-color: rgb(231, 231, 231);
+    margin: 10px;
+}
+
+main > section > section > div.post {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+main > section > section > div > img {
+    width: 40px;
+}
+
+main > section > section > article {
+    padding: 5px 40px;
+    cursor: pointer;
+}
+
+main > section > section > article:hover {
+    text-decoration: underline;
+}
+
+main > section > section > article > p {
+    margin: 10px 0px;
+    text-indent: 10px;
+    text-align: justify;
+}
+
+main > section > section > div.botoes {
+    border-width: 0px;
+    display: flex;
+    align-items: center;
+}
+
+main > section > section > div > button {
+    border: 0px solid transparent;
+    border-radius: 50%;
+    width: max-content;
+    margin: 3px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+main > section > section > div > button:hover {
+    background-color: rgba(51, 51, 51, 0.315);
+}
+
+main > section > section > div > span {
+    margin: 3px 20px 3px 2px;
+    padding: 2px;
+}
+
+svg {
+    fill: rgb(59, 59, 59);
+    pointer-events: all;
+    width: 25px;
+}
+
+div#grandao {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.342);
+    bottom: 0px;
+    left: 0px;
+
+}
+
+div#grandao > button {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    align-self: flex-start;
+    border: 0px;
+    width: 100px;
+    font-size: 3em;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+div#grandao > div#indice {
+    align-self: center;
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 10px 5px;
+}
+
+div#grandao> div#indice > ol {
+    list-style-position: inside;
+}
+
+div#grandao> div#indice > ol > li {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+li#a {
+    background-color: var(--a);
+}
+
+li#b {
+    background-color: var(--b);
+}
+
+li#c {
+    background-color: var(--c);
+}
+
+li#d {
+    background-color: var(--d);
+}
+
+div#grandao > article {
+    background-color: white;
+    align-self: center;
+    max-width: 1000px;
+    min-width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    margin: 5px 10px 10px;
+}
+
+div#grandao > article > p {
+    margin: 10px 0px;
+    text-indent: 10px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+div#grandao > article > p > span {
+    color: var(--d);
+}
+
+div#grandao > article > p > span.a {
+    color: var(--a);
+} 
+
+div#grandao > article > p > span.b {
+    color: var(--b);
+}
+
+div#grandao > article > p > span.c {
+    color: var(--c);
+}

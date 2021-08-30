@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'medo';
+    src: url(../fonts/SCARYNIZO.otf);
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(../imagens/moluscado.jpg);
+    background-size: 300px;
+    background-position: center;
+    background-repeat: repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    filter: saturate(500%);
+}
+
+header {
+    background-color: transparent;
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    background-color: transparent;
+    justify-content: space-around;
+}
+
+nav a {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    color: red;
+    padding: 10px 0px;
+    font-family: 'medo', cursive;
+}
+
+nav a:hover {
+    color: transparent;
+}
+
+article {
+    background-color: transparent;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+article h1 {
+    color: red;
+    font-size: 3em;
+    font-weight: normal;
+    font-family: 'medo', cursive;
+}
+
+
+
+img {
+    max-width: 600px;
+    min-width: 300px;
+    width: inherit;
+    margin: 20px;
+}
+
+
+footer {
+    background-color: var(--cor-principal);
+    color: red;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: 'medo', cursive;
+}
